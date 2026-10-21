@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Outfit', system-ui, -apple-system, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono, .tabular-nums {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Light theme surface & contrast adaptation */
+html:not(.dark) body {
+  background-color: #F8FAFC;
+  color: #0F172A;
+}
+
+html:not(.dark) .bg-\[\#111722\] {
+  background-color: #FFFFFF !important;
+}
+
+html:not(.dark) .bg-\[\#0B0F14\] {
+  background-color: #F1F5F9 !important;
+}
+
+html:not(.dark) .border-slate-800,
+html:not(.dark) .border-slate-800\/80,
+html:not(.dark) .border-slate-700 {
+  border-color: #E2E8F0 !important;
+}
+
+html:not(.dark) .text-white {
+  color: #0F172A !important;
+}
+
+html:not(.dark) .text-slate-200,
+html:not(.dark) .text-slate-300 {
+  color: #334155 !important;
+}
+
+html:not(.dark) .text-slate-400 {
+  color: #475569 !important;
+}
+
+html:not(.dark) .text-emerald-400 {
+  color: #059669 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

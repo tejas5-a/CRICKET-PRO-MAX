@@ -1,0 +1,6 @@
+{
+  "name": "CRICKET PRO MAX",
+  "description": "All-in-one cricket platform for live ball-by-ball scoring, tournament management, NRR standings, player analytics, ground directory, and video coaching.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
